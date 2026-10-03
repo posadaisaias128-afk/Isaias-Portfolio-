@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaias Posada Rios | Engineering Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f5f5f5;
+    }
+
+    /* Navigation */
+    nav {
+      background: #a31f34; /* MIT cardinal red */
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav .nav-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero */
+    header {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      color: #ccc;
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #a31f34;
+      padding-bottom: 0.4rem;
+      display: inline-block;
+    }
+
+    section p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    /* Project cards */
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: contain;
+      background: #e8e8e8;
+    }
+
+    .card .card-body {
+      padding: 1.2rem;
+    }
+
+    .card .card-body h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .card .card-body p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .placeholder-note {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 4px;
+      padding: 1rem;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Contact */
+    .contact-info {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+
+    .contact-info li {
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-info a {
+      color: #a31f34;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      font-size: 0.85rem;
+      margin-top: 3rem;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <div class="logo">Isaias Posada Rios</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Isaias Posada Rios</h1>
+    <p>AeroAstro Engineering &bull; Massachusetts Institute of Technology</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm an undergraduate student at the Massachusetts Institute of Technology (MIT),
+      pursuing a degree in Aeronautics and Astronautics (Course 16). My academic focus
+      and passion lie in <strong>aircraft propulsion</strong> — from jet engine design
+      and thermodynamic cycle analysis to next-generation sustainable aviation technologies.
+    </p>
+    <p>
+      I'm driven by the challenge of designing efficient, reliable propulsion systems
+      that push the boundaries of aerospace engineering. Through coursework, hands-on
+      projects, and CAD modeling, I continue to develop the technical skills needed to
+      contribute to the future of flight.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <!-- CAD Project Card -->
+      <div class="card">
+        <img src="cad-piece.jpg" alt="CAD Model — replace with your file">
+        <div class="card-body">
+          <h3>CAD Design</h3>
+          <p>
+            A CAD model I designed. Replace this placeholder image and description
+            with details about your specific design, tools used (e.g., SolidWorks,
+            Onshape, CATIA), and any relevant engineering context.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="placeholder-note">
+      <strong>Note:</strong> To add your CAD image, place the file (e.g.,
+      <code>cad-piece.jpg</code> or <code>cad-piece.png</code>) in the same
+      folder as this <code>index.html</code> file. Update the
+      <code>src</code> attribute in the <code>&lt;img&gt;</code> tag above
+      to match your filename.
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out through any of the following:</p>
+    <ul class="contact-info">
+      <li>Email: <a href="mailto:iposada@mit.edu">iposada@mit.edu</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/isaias-posada-rios" target="_blank">linkedin.com/in/isaias-posada-rios</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Isaias Posada Rios. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
